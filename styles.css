@@ -1,0 +1,56 @@
+
+/* Universal setting */
+
+html {
+    margin: 0;
+    padding: 0;
+    --main-background: #111C26;
+    --blue: #346173;
+    --tan: #A68568;
+    --brick: #A63D33;
+    --wine: #8C3E3E;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--main-background);
+}
+
+.clock {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 45px #e6f2ff;
+    
+}
+
+.seconds-hand {
+    position: absolute;
+    height:  180px;
+    width: 2px;
+    background-color: var(--tan);
+    right: 199px;
+    bottom: 199px;
+}
+
+.minutes-hand {
+    position: absolute;
+    height: 140px;
+    width: 4px;
+    background-color: var(--blue);
+    right: 198px;
+    bottom: 198px;
+}
+
+.hours-hand {
+    position: absolute;
+    height: 100px;
+    width: 6px;
+    background-color: var(--brick);
+    right: 197px;
+    bottom: 197px;
+}
