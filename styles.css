@@ -1,14 +1,17 @@
 
 /* Universal setting */
 
-html {
+* {
     margin: 0;
     padding: 0;
+}
+
+html {
     --main-background: #111C26;
-    --blue: #346173;
-    --tan: #A68568;
-    --brick: #A63D33;
-    --wine: #8C3E3E;
+    --blue: #19aae3;
+    --tan: #e19b0e;
+    --brick: #df3627;
+    --pink: rgb(246, 89, 222);
 }
 
 body {
@@ -17,40 +20,124 @@ body {
     align-items: center;
     height: 100vh;
     background-color: var(--main-background);
+    
 }
 
+h1 {
+    color: aliceblue;
+    position: absolute;
+    top: 20vh;
+}
+
+
 .clock {
+    
     position: absolute;
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    box-shadow: 0px 0px 45px #e6f2ff;
+    border: solid 5px var(--main-background);
+    box-shadow: 4px solid var(--main-bg-color);
+	box-shadow: 0 -15px 15px rgba(83, 239, 250, 0.05),
+		        inset 0 -15px 15px rgba(255, 224, 101, 0.05), 
+                0 15px 15px rgba(0, 0, 0, 0.3),
+		        inset 0 15px 15px rgba(7, 7, 7, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
-.seconds-hand {
+
+#seconds-hand {
     position: absolute;
     height:  180px;
     width: 2px;
     background-color: var(--tan);
-    right: 199px;
-    bottom: 199px;
+    right: 200px;
+    bottom: 200px;
+    transform-origin: 50% 100%;
+    box-shadow: 0px 0px 5px var(--tan),
+                0px 0px 15px var(--tan),
+                0px 0px 25px var(--tan),
+                0px 0px 35px var(--tan),
+                0 0 0 1px var(--tan),
+                0 0 40px var(--tan);
+    border-radius: 10px;
+    z-index: 99;
 }
 
-.minutes-hand {
+#minutes-hand {
     position: absolute;
     height: 140px;
     width: 4px;
     background-color: var(--blue);
-    right: 198px;
-    bottom: 198px;
+    right: 200px;
+    bottom: 200px;
+    transform-origin: 50% 100%;
+    box-shadow: 0px 0px 15px var(--blue),
+                 0 0 25px var(--blue),
+                 0 0 35px var(--blue),
+                 0 0 5px var(--blue),
+                 0 0 0 0.2px var(--blue);
+    border-radius: 10px;
+    z-index: 98;
 }
 
-.hours-hand {
+#hours-hand {
     position: absolute;
-    height: 100px;
-    width: 6px;
+    height: 110px;
+    width: 4px;
     background-color: var(--brick);
-    right: 197px;
-    bottom: 197px;
+    left: 200px;
+    bottom: 200px;
+    right: 200px;
+    transform-origin: 50% 100%;
+    box-shadow: 0px 0px 15px var(--brick),
+                0 0 25px var(--brick),
+                0 0 35px var(--brick),
+                0 0 5px var(--brick),
+                0 0 0 0.5px;
+    border-radius: 10px;
 }
+
+
+
+ .clock::before {
+    content: '';
+    height: 15px;
+    width: 15px;
+    background-color: var(--brick);
+    border: 2px solid var(--tan);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 100;
+    box-shadow: 0px 0px 35px var(--tan), 
+                0px 0px 15px var(--tan),
+                0px 0px 25px var(--tan),
+                0px 0px 35px var(--tan),
+                0 0 0 1px var(--tan),
+                inset 0 0 15px var(--tan),
+                inset 0 0 5px var(--tan),
+                 0 0 0 1px;
+    border-radius: 10px;
+}
+
+
+
+
+/* neon clock outline 
+
+
+0 0 40px rgb(247, 123, 233),
+                0 0  45px var(--pink), 
+                0 0  30px var(--pink), 
+                0 0  15px var(--pink), 
+                0 0 5px var(--pink),
+                0 0 0 5px  rgb(242, 150, 210),
+                inset 0 0  35px rgb(247, 123, 233),
+                inset 0 0  25px var(--pink),
+                inset 0 0  15px var(--pink);
+
+
+*/
