@@ -68,12 +68,12 @@ h1 {
 
 #seconds-hand {
     position: absolute;
-    height:  160px;
+    height:  180px;
     width: 2px;
     background-color: var(--tan);
     right: 200px;
-    bottom: 200px;
-    transform-origin: 50% 100%;
+    bottom: 160px;
+    transform-origin: 50% 140px;
     box-shadow: 0px 0px 5px var(--tan),
                 0px 0px 15px var(--tan),
                 0px 0px 25px var(--tan),
