@@ -12,34 +12,51 @@ html {
     --tan: #e19b0e;
     --brick: #df3627;
     --pink: rgb(246, 89, 222);
+    --green: rgba(35, 158, 35, 0.824);
+    
 }
 
 body {
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100vh;
     background-color: var(--main-background);
     
 }
 
 h1 {
-    color: aliceblue;
-    position: absolute;
-    top: 20vh;
+    color: rgba(27, 213, 27, 0.845);
+    margin: 10vh;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    font-size: 3.75em;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px rgba(13, 242, 13, 0.486), 
+                 0 0 15px rgba(67, 213, 67, 0.671),
+                 0 0 25px var(--green),
+                 0 0 20px var(--green),
+                 0 0 35px rgba(41, 211, 41, 0.354),
+                 0 0 50px rgba(17, 70, 17, 0.703);
+    letter-spacing: 4px;
+    word-spacing: 15px;
+                 
 }
 
 
 .clock {
-    
     position: absolute;
+    margin: 30vh;
     height: 400px;
     width: 400px;
     border-radius: 50%;
     border: solid 5px var(--main-background);
     box-shadow: 4px solid var(--main-bg-color);
-	box-shadow: 0 -15px 15px rgba(83, 239, 250, 0.05),
-		        inset 0 -15px 15px rgba(255, 224, 101, 0.05), 
+	box-shadow: 0 -15px 15px rgba(129, 241, 106, 0.05),
+                0 -15px 35px rgba(5, 8, 4, 0.58),
+                0 -15px 20px rgb(21, 71, 21),
+		        inset 0 -15px 15px rgba(52, 240, 35, 0.05), 
                 0 15px 15px rgba(0, 0, 0, 0.3),
 		        inset 0 15px 15px rgba(7, 7, 7, 0.3);
     display: flex;
@@ -51,17 +68,18 @@ h1 {
 
 #seconds-hand {
     position: absolute;
-    height:  180px;
+    height:  170px;
     width: 2px;
-    background-color: var(--tan);
+    background-color: rgb(255, 255, 0);
     right: 200px;
     bottom: 200px;
     transform-origin: 50% 100%;
-    box-shadow: 0px 0px 5px var(--tan),
-                0px 0px 15px var(--tan),
-                0px 0px 25px var(--tan),
-                0px 0px 35px var(--tan),
-                0 0 0 1px var(--tan),
+    box-shadow: 0 0 5px rgba(234, 234, 18, 0.975),
+                0 0 7px rgb(248, 248, 50),
+                0 0 15px var(--tan),
+                0 0 25px rgba(246, 246, 88, 0.89),
+                0 0 35px var(--tan),
+                0 0 0 1px rgb(243, 243, 100),
                 0 0 40px var(--tan);
     border-radius: 10px;
     z-index: 99;
@@ -70,7 +88,7 @@ h1 {
 #minutes-hand {
     position: absolute;
     height: 140px;
-    width: 4px;
+    width: 2px;
     background-color: var(--blue);
     right: 200px;
     bottom: 200px;
@@ -79,15 +97,15 @@ h1 {
                  0 0 25px var(--blue),
                  0 0 35px var(--blue),
                  0 0 5px var(--blue),
-                 0 0 0 0.2px var(--blue);
+                 0 0 0 1px var(--blue);
     border-radius: 10px;
-    z-index: 98;
+    
 }
 
 #hours-hand {
     position: absolute;
     height: 110px;
-    width: 4px;
+    width: 2px;
     background-color: var(--brick);
     left: 200px;
     bottom: 200px;
@@ -97,8 +115,10 @@ h1 {
                 0 0 25px var(--brick),
                 0 0 35px var(--brick),
                 0 0 5px var(--brick),
-                0 0 0 0.5px;
+                0 0 0 1px var(--brick);
     border-radius: 10px;
+    z-index: 98;
+    
 }
 
 
@@ -112,10 +132,10 @@ h1 {
     border-radius: 50%;
     position: absolute;
     z-index: 100;
-    box-shadow: 0px 0px 35px var(--tan), 
-                0px 0px 15px var(--tan),
-                0px 0px 25px var(--tan),
-                0px 0px 35px var(--tan),
+    box-shadow: 0 0 35px var(--tan), 
+                0 0 15px var(--tan),
+                0 0 25px var(--tan),
+                0 0 35px var(--tan),
                 0 0 0 1px var(--tan),
                 inset 0 0 15px var(--tan),
                 inset 0 0 5px var(--tan),
