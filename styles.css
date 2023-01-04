@@ -210,7 +210,7 @@ h1 {
 
 button {
     position: absolute;
-    bottom: 15vh;
+    top: 33em;
     color: rgba(199, 220, 241, 0.918);
     text-shadow: 0 0 25px #9ad2e890,
                  0 0 5px #9de0faf1;
