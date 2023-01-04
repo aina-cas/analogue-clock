@@ -25,7 +25,7 @@ body {
 }
 
 h1 {
-    color: rgba(199, 220, 241, 0.918);
+    
     position: absolute;
     top: -1em;
     font-family: 'Righteous', cursive; 
@@ -35,6 +35,7 @@ h1 {
     display: flex;
     flex-wrap: nowrap;
     text-align: center;
+    color: rgba(199, 220, 241, 0.918);
     text-shadow: 0 0 25px #9ad2e890,
                 0 0 5px #9de0faf1;
     text-transform: uppercase;
@@ -63,7 +64,7 @@ h1 {
 
 #seconds-hand {
     position: absolute;
-    height:  180px;
+    height:  160px;
     width: 2px;
     background-color: var(--tan);
     right: 200px;
@@ -81,7 +82,7 @@ h1 {
 
 #minutes-hand {
     position: absolute;
-    height: 140px;
+    height: 130px;
     width: 4px;
     background-color: var(--blue);
     right: 200px;
@@ -153,3 +154,47 @@ h1 {
 
 
 */
+
+#twelve {
+    z-index: 101;
+    position: absolute;
+    top: 5px;
+    color: rgba(199, 220, 241, 0.918);
+    text-shadow: 0 0 25px #9ad2e890,
+                 0 0 5px #9de0faf1;
+    font-family: 'Righteous', cursive; 
+    font-size: 2em;
+}
+
+#three {
+    z-index: 102;
+    position: absolute;
+    right: 5px;
+    color: rgba(199, 220, 241, 0.918);
+    text-shadow: 0 0 25px #9ad2e890,
+                 0 0 5px #9de0faf1;
+    font-family: 'Righteous', cursive; 
+    font-size: 2em;
+}
+
+#six {
+    z-index: 102;
+    position: absolute;
+    bottom: 5px;
+    color: rgba(199, 220, 241, 0.918);
+    text-shadow: 0 0 25px #9ad2e890,
+                 0 0 5px #9de0faf1; 
+    font-family: 'Righteous', cursive;
+    font-size: 2em;
+}
+
+#nine {
+    z-index: 102;
+    position: absolute;
+    left: 5px;
+    color: rgba(199, 220, 241, 0.918);
+    text-shadow: 0 0 25px #9ad2e890,
+                 0 0 5px #9de0faf1;
+    font-family: 'Righteous', cursive;
+    font-size: 2em;
+}
