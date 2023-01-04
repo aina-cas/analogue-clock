@@ -216,10 +216,10 @@ button {
                  0 0 5px #9de0faf1;
     background-color: var(--main-background);
     border: solid 3px var(--main-background);
-    box-shadow: 0 -10px 10px rgba(83, 239, 250, 0.05),
-		        inset 0 -10px 10px rgba(255, 224, 101, 0.05), 
-                0 10px 10px rgba(0, 0, 0, 0.3),
-		        inset 0 10px 10px rgba(7, 7, 7, 0.3);
+    box-shadow: 0 -5px 5px rgba(83, 239, 250, 0.087),
+		        inset 0 -5px 5px rgba(108, 200, 250, 0.089), 
+                0 5px 5px rgba(0, 0, 0, 0.3),
+		        inset 0 5px 5px rgba(7, 7, 7, 0.3);
     font-family: 'Righteous', cursive; 
     font-weight: 200;
     font-size: 1.5em;
@@ -228,6 +228,7 @@ button {
     text-transform: uppercase;
     height: 60px;
     width: 200px;
+    transition: 100ms;
 }
 
 button:hover {
