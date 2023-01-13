@@ -29,7 +29,7 @@
 
 .light-theme button:hover {
     text-shadow: none;
-    color: var(--blue);
+    color: #e19b0e;
 }
 
 .light-theme button {
