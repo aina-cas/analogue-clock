@@ -1,0 +1,52 @@
+/* Light/Dar themes */
+
+.light-theme {
+    --main-background: rgb(237, 237, 237);
+    --text-color: #5d6f80c3;
+}
+
+.light-theme #seconds-hand {
+    box-shadow: 0 0 0 1px var(--tan);
+}
+
+.light-theme #minutes-hand {
+    box-shadow: 0 0 0 1px var(--blue);
+}
+
+.light-theme #hours-hand {
+    box-shadow: 0 0 0 0.5 var(--brick);
+    width: 5px;
+}
+
+.light-theme h1, 
+.light-theme #twelve,
+.light-theme #three,
+.light-theme #six,
+.light-theme #nine,
+.light-theme button {
+    text-shadow: none;
+}
+
+.light-theme button:hover {
+    text-shadow: none;
+    color: var(--blue);
+}
+
+.light-theme button {
+    box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.05),
+                inset 0 -5px 5px rgba(255, 255, 255, 0.05), 
+                0 5px 5px rgba(0, 0, 0, 0.3),
+                inset 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.light-theme .clock::before {
+    box-shadow: none;
+}
+
+.light-theme .clock {
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+    inset 0 -15px 15px rgba(255, 255, 255, 0.05), 
+    0 15px 15px rgba(0, 0, 0, 0.3),
+    inset 0 15px 15px rgba(0, 0, 0, 0.3);
+    border: 5px solid var(--main-background);
+}

@@ -7,12 +7,14 @@
 }
 
 html {
-    --main-background: #111C26;
+    --main-background: #111C26; 
     --blue: #19aae3;
     --tan: #e19b0e;
     --brick: #df3627;
     --pink: rgb(246, 89, 222);
+    --text-color: #c7dcf1ea;
 }
+
 
 body {
     display: flex;
@@ -37,7 +39,7 @@ h1 {
     display: flex;
     flex-wrap: nowrap;
     text-align: center;
-    color: rgba(199, 220, 241, 0.918);
+    color: var(--text-color);
     text-shadow: 0 0 25px #9ad2e890,
                 0 0 5px #9de0faf1;
     text-transform: uppercase;
@@ -96,7 +98,7 @@ h1 {
                  0 0 25px var(--blue),
                  0 0 35px var(--blue),
                  0 0 5px var(--blue),
-                 0 0 0 0.2px var(--blue);
+                 0 0 0 1px var(--blue);
     border-radius: 10px;
     z-index: 98;
 }
@@ -114,7 +116,7 @@ h1 {
                 0 0 25px var(--brick),
                 0 0 35px var(--brick),
                 0 0 5px var(--brick),
-                0 0 0 0.5px;
+                0 0 0 0.5px var(--brick);
     border-radius: 10px;
 }
 
@@ -166,7 +168,7 @@ h1 {
     z-index: 101;
     position: absolute;
     top: 5px;
-    color: rgba(199, 220, 241, 0.918);
+    color: var(--text-color);
     text-shadow: 0 0 25px #9ad2e890,
                  0 0 5px #9de0faf1;
     font-family: 'Righteous', cursive; 
@@ -177,7 +179,7 @@ h1 {
     z-index: 102;
     position: absolute;
     right: 5px;
-    color: rgba(199, 220, 241, 0.918);
+    color: var(--text-color);
     text-shadow: 0 0 25px #9ad2e890,
                  0 0 5px #9de0faf1;
     font-family: 'Righteous', cursive; 
@@ -188,7 +190,7 @@ h1 {
     z-index: 102;
     position: absolute;
     bottom: 5px;
-    color: rgba(199, 220, 241, 0.918);
+    color: var(--text-color);
     text-shadow: 0 0 25px #9ad2e890,
                  0 0 5px #9de0faf1; 
     font-family: 'Righteous', cursive;
@@ -199,7 +201,7 @@ h1 {
     z-index: 102;
     position: absolute;
     left: 5px;
-    color: rgba(199, 220, 241, 0.918);
+    color: var(--text-color);
     text-shadow: 0 0 25px #9ad2e890,
                  0 0 5px #9de0faf1;
     font-family: 'Righteous', cursive;
@@ -211,7 +213,7 @@ h1 {
 button {
     position: absolute;
     top: 33em;
-    color: rgba(199, 220, 241, 0.918);
+    color: var(--text-color);
     text-shadow: 0 0 25px #9ad2e890,
                  0 0 5px #9de0faf1;
     background-color: var(--main-background);

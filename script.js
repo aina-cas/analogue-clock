@@ -1,4 +1,5 @@
 
+// The Clock function 
 
 const secondsHand =  document.getElementById('seconds-hand');
 const minutesHand = document.getElementById('minutes-hand');
@@ -22,4 +23,27 @@ function getTime() {
 }
 
 setInterval(getTime, 100);
+
+
+// Light/Dark Mode 
+
+let button = document.getElementById('button');
+
+button.onclick = function () {
+    document.body.classList.toggle("light-theme");
+    if (document.body.classList.contains("light-theme")) {
+        button.innerHTML = "Dark"
+    } else {
+        button.innerHTML = "light";
+    }
+}
+
+
+// Remove glow from clock hands 
+
+document.getElementById("seconds-hand").classList.add("light-theme");
+document.getElementById("seconds-hand").classList.remove("light-theme")
+
+document.querySelector("h1").classList.add('light-theme');
+document.querySelector("h1").classList.remove("light-theme");
 
