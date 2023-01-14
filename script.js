@@ -39,7 +39,7 @@ button.onclick = function () {
 }
 
 
-// Remove glow from clock hands 
+// Remove glow from clock hands and text
 
 document.getElementById("seconds-hand").classList.add("light-theme");
 document.getElementById("seconds-hand").classList.remove("light-theme")

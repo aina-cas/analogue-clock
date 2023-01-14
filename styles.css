@@ -5,6 +5,9 @@
     margin: 0;
     padding: 0;
 }
+root {
+    font-size: 16px;
+}
 
 html {
     --main-background: #111C26; 
@@ -45,6 +48,7 @@ h1 {
     text-transform: uppercase;
 }
 
+
 /* Clock face */
 
 .clock {
@@ -62,9 +66,13 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3em;
-    top: 15em;
+    margin: 3rem;
+    top: 15rem;
 }
+
+
+
+
 
 /* Clock hands  */
 
@@ -241,3 +249,66 @@ button:hover {
                 0 0 35px #ddf4fd;
     cursor: pointer;
 }
+
+
+/* Media Queries */
+
+@media all and (max-width: 480px) {
+    root {
+      font-size: 14px;
+    }
+  
+    h1 {
+        font-size: 2rem;
+        margin-top: 5rem;
+    }
+
+    .clock {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        top: 10rem;
+        
+    }
+
+    #seconds-hand {
+        position: absolute;
+        right: 150px;
+        bottom: 120px;
+        height: 140px;
+        width: 2px;
+        transform-origin: 50% 110px;
+    }
+
+    #minutes-hand {
+        height: 110px;
+        transform-origin: 50% 100%;
+        width: 3px !important;
+        bottom: 150px;
+        right: 150px;
+        left: 150px;
+    }
+
+    #hours-hand {
+        height: 90px;
+        transform-origin: 50% 100%;
+        position: absolute;
+        bottom: 150px;
+        right: 150px;
+        left: 150px;
+    }
+
+    #twelve, 
+    #three,
+    #six,
+    #nine {
+        font-size: 1.5rem;
+    }
+
+    button {
+        position: absolute;
+        top: 28em;
+    }
+  
+    
+  }
