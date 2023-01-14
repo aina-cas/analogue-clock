@@ -260,14 +260,14 @@ button:hover {
   
     h1 {
         font-size: 2rem;
-        margin-top: 5rem;
+        margin-top: 4rem;
     }
 
     .clock {
         height: 300px;
         width: 300px;
         position: absolute;
-        top: 10rem;
+        top: 8rem;
         
     }
 
@@ -307,7 +307,7 @@ button:hover {
 
     button {
         position: absolute;
-        top: 28em;
+        top: 24em;
     }
   
     
